@@ -1,7 +1,69 @@
 * {
-  background-color: bisque;
+  box-sizing: border-box;
 }
-h1 {
-  padding-top: 30px;
-  text-align: center;
+body {
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#calculator-container {
+  background-color: rgb(164, 215, 198);
+  margin: 0 auto;
+  width: 500px;
+}
+#buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.clear {
+  height: 30px;
+  width: 372px;
+  font-size: 24px;
+  font-weight: 800;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 10px;
+  background-color: red;
+}
+.backspace {
+  height: 30px;
+  width: 124px;
+  font-size: 28px;
+  font-weight: 800;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 10px;
+  background-color: yellow;
+}
+.digits,
+.decimal,
+.equal,
+.operator {
+  padding: 8px;
+  width: 122px;
+  font-size: 24px;
+  font-weight: 800;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 10px;
+}
+#calculator-display {
+  display: flex;
+  height: 50px;
+  border: 0.5px solid black;
+  background-color: rgb(0, 242, 255);
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: right;
+  padding: 12px;
+  justify-content: right;
+  align-items: center;
+}
+.operator {
+  background-color: rgb(29, 187, 66);
+}
+.digits {
+  background-color: rgb(226, 119, 240);
 }
